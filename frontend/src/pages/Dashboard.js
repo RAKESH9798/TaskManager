@@ -13,7 +13,7 @@ const Dashboard = () => {
   // Fetch tasks from the backend
   const fetchTasks = useCallback(async () => {
     try {
-      const { data } = await axios.get("http://localhost:4444/api/tasks", {
+      const { data } = await axios.get("https://taskmanager-backend-rrz9.onrender.com/api/tasks", {
         headers: {
           Authorization: `Bearer ${userInfo.token}`,
         },

@@ -49,7 +49,7 @@ const Register = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:4444/api/auth/register", {
+      const { data } = await axios.post("https://taskmanager-backend-rrz9.onrender.com/api/auth/register", {
         name,
         email,
         password,

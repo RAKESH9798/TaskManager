@@ -38,7 +38,7 @@ const Login = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:4444/api/auth/login", { email, password });
+      const { data } = await axios.post("https://taskmanager-backend-rrz9.onrender.com/api/auth/login", { email, password });
       localStorage.setItem("userInfo", JSON.stringify(data));
       navigate("/");
     } catch (error) {

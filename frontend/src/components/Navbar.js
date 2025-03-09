@@ -8,7 +8,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("userInfo");
-    navigate("http://localhost:4444/api/auth/login");
+    navigate("https://taskmanager-backend-rrz9.onrender.com/api/auth/login");
   };
 
   return (

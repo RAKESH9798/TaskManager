@@ -8,7 +8,7 @@ const TaskList = ({ tasks, fetchTasks }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4444/api/tasks/${id}`, {
+      await axios.delete(`https://taskmanager-backend-rrz9.onrender.com/api/tasks/${id}`, {
         headers: {
           Authorization: `Bearer ${JSON.parse(localStorage.getItem("userInfo")).token}`,
         },

@@ -12,7 +12,7 @@ const UpdateForm = ({ task, fetchTasks, onClose }) => {
     e.preventDefault();
     try {
       await axios.put(
-        `http://localhost:4444/api/tasks/${task._id}`,
+        `https://taskmanager-backend-rrz9.onrender.com/api/tasks/${task._id}`,
         { title, description, status, dueDate },
         {
           headers: {
