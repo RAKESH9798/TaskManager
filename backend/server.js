@@ -13,7 +13,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: "https://taskmanager-frontend-9n8s.onrender.com", credentials: true }));
 
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", protect, taskRoutes);
